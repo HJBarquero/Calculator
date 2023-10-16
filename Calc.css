@@ -1,0 +1,116 @@
+*{box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+   padding: 0;
+   
+background-image: linear-gradient(150deg ,rgb(29, 14, 38), rgb(5, 7, 20));
+
+background-attachment:fixed;
+background-size: cover;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+min-height: 100vh;
+}
+
+
+.calc_container{
+
+    width: 360px;
+    height: 525px;
+    padding: 10px;
+    background-image: linear-gradient(150deg ,rgb(50, 40, 96), rgb(17, 13, 63));
+    border-radius: 15px;
+    box-shadow: 0px 0px 19px 1px  rgb(0, 0, 0);
+    
+   
+    
+}
+.calc_container:hover{
+    box-shadow: 0px 0px 7px 0.5px  rgb(96, 24, 211);
+    animation-name: calc_cont_hov;
+    animation-duration: 0.3s;
+}
+@keyframes calc_cont_hov{
+     from {box-shadow: 0px 0px 22px 2px  rgb(0, 0, 0); 
+    };
+
+     to { box-shadow: 0px 0px 2px 2px  rgb(195, 18, 235); 
+    };
+}
+
+.calc_screen{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    margin-top: 5px;
+    width: 100%;
+    height: 95px;
+    border-radius: 5px;
+    color: white;
+    background: rgb(11, 4, 40);
+
+    /*CALC SCREEN FONT*/
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+
+
+}
+
+
+.calc_btns {
+    height: 370px;
+    width: 100%;
+    margin-top:  25px;
+    background: rgb(13, 5, 42);
+    padding: 20px;
+    border-radius: 5px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+   
+}
+.calc_btns button  {
+    margin-left: 2px;
+    margin-left: 2px;
+    justify-content: space-around;
+
+    border: 2px solid rgb(17, 10, 56);
+   
+    color: rgb(255, 255, 255);
+   
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.calc_btns button:not(.C) {
+    background: none;
+}
+.calc_btns button:not(.C):hover{
+    background: rgb(20, 10, 57);
+}
+
+    /* BTNS STYLES*/
+.equal{
+    grid-row: span 2;
+}
+
+.C {
+    background: rgb(211, 23, 23);
+}
+.C:hover {
+    background: rgb(255, 58, 58);
+}
+
+.zero {
+    grid-column: span 2; 
+}
