@@ -6,7 +6,7 @@ body{
     margin: 0;
    padding: 0;
    
-background-image: linear-gradient(150deg ,rgb(29, 14, 38), rgb(5, 7, 20));
+background-image: linear-gradient(150deg ,rgb(40, 19, 52), rgb(7, 10, 30));
 
 background-attachment:fixed;
 background-size: cover;
@@ -51,7 +51,7 @@ min-height: 100vh;
     padding-right: 20px;
     margin-top: 5px;
     width: 100%;
-    height: 95px;
+    height: 120px;
     border-radius: 5px;
     color: white;
     background: rgb(11, 4, 40);
@@ -59,7 +59,7 @@ min-height: 100vh;
     /*CALC SCREEN FONT*/
     font-family: 'Poppins', sans-serif;
     text-align: right;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 
 
@@ -67,9 +67,9 @@ min-height: 100vh;
 
 
 .calc_btns {
-    height: 370px;
+    height: 360px;
     width: 100%;
-    margin-top:  25px;
+    margin-top:  12px;
     background: rgb(13, 5, 42);
     padding: 20px;
     border-radius: 5px;
@@ -92,23 +92,29 @@ min-height: 100vh;
     font-size: 25px;
 }
 
-.calc_btns button:not(.C) {
+.calc_btns button:not(.C , .equal) {
     background: none;
 }
-.calc_btns button:not(.C):hover{
+.calc_btns button:not(.C , .equal):hover{
     background: rgb(20, 10, 57);
 }
 
     /* BTNS STYLES*/
 .equal{
     grid-row: span 2;
+    background: rgb(54, 54, 134);
+}
+.equal:hover{
+    background: rgb(54, 54, 134);
+    background: rgb(36, 36, 119);
 }
 
 .C {
-    background: rgb(211, 23, 23);
+    background: rgb(255, 58, 58);
 }
 .C:hover {
-    background: rgb(255, 58, 58);
+   
+    background: rgb(212, 31, 31);
 }
 
 .zero {
