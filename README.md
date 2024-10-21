@@ -1,10 +1,10 @@
-#JQuery calculator
+# JQuery calculator
 
 <p>
 This is a project about a simple calculator, using HTML,CSS,JS and JQuery.
 </p>
 
-##Features
+## Features
 
 - Addition (`+`)
 - Subtraction (`-`)
@@ -28,7 +28,7 @@ with then next command:
 cd jquery-calculator".
 4. Open the index.html.
 
-##License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 ##Contact
@@ -36,4 +36,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ```
 GitHub: https://github.com/HJBarquero
 ```
-###End
+### End
